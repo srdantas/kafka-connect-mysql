@@ -9,7 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class Consumer {
 
-  @KafkaListener(topics = "db-todo-task")
+  @KafkaListener(topics = "db-todo-custom-query")
   public void execute(final String message) {
     log.info("Consumes: {}", message);
   }
